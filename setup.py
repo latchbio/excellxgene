@@ -7,8 +7,8 @@ with open("backend/server/requirements.txt") as fh:
     requirements = fh.read().splitlines()
 
 setup(
-    name="excellxgene",
-    version="2.9.6",
+    name="latch-excellxgene",
+    version="1.0.0",
     packages=find_packages(),
     url="https://github.com/czbiohub/excellxgene",
     license="MIT",

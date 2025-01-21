@@ -111,8 +111,9 @@ lint-client:
 # CREATING DISTRIBUTION RELEASE
 
 .PHONY: pydist
-pydist: build
-	cd $(BUILDDIR); python setup.py sdist -d ../dist
+# pydist: build
+pydist:
+	cd $(BUILDDIR); python3 setup.py sdist -d ../dist
 	@echo "done"
 
 
