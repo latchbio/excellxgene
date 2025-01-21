@@ -705,7 +705,8 @@ const setupWebSockets = (dispatch,getState,loggedIn,hostedMode) => {
   let wsSankey;
   let wsLeiden;
   let wsDownloadAnndata;
-  const urlschema = hostedMode ? "wss://" : "ws://";
+  const urlschema = "wss://"
+  // const urlschema = hostedMode ? "wss://" : "ws://";
   try{
     if (loggedIn || !hostedMode){
       wsDiffExp = new WebSocket(`${urlschema}${globals.API.prefix.split('/api').at(0).split('://').at(-1)}/diffexp`)
