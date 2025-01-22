@@ -202,10 +202,5 @@
         ]
       }
     }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged --config \"./configuration/lint-staged/lint-staged.config.js\""
-    }
   }
 }
